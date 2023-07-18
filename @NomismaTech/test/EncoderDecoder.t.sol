@@ -19,12 +19,12 @@ contract ByteEncoderDecoder is Test {
         storageContract = new Storage();
         controller = new Controller(address(storageContract));
 
-        structInstance = StructDefiner.MyStruct(
-            10,
-            alice,
-            11,
-            12
-        );
+        structInstance = StructDefiner.MyStruct({
+            someField: 10,
+            someAddress: alice,
+            someOtherField: 11,
+            oneMoreField: 12
+        });
 
         storageContract.push(structInstance);
     }

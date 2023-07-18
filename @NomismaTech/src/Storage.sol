@@ -5,6 +5,8 @@ import "forge-std/console.sol";
 import {StructDefiner} from "./StructDefiner.sol";
 
 contract Storage {
+    StructDefiner.MyStruct[] internal structs;
+
     // uint256 someField; 32 bytes - 1 slot
     // address someAddress; 20 bytes - but there's no variable to be packed together - 1 slot
     // uint128 someOtherField; 16 bytes - 1/2 slot
@@ -12,7 +14,6 @@ contract Storage {
     // ---------------------------------------
     // TOTAL OF 3 SLOTS
     uint8 amountOfStorageSlotsStructTakes = 3;
-    StructDefiner.MyStruct[] internal structs;
 
     function push(StructDefiner.MyStruct memory s) public {
         structs.push(s);
