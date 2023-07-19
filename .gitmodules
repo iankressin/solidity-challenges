@@ -1,0 +1,3 @@
+[submodule "@etherparty/lib/openzeppelin-contracts"]
+	path = @etherparty/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
