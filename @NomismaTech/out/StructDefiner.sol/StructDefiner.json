@@ -1,0 +1,330 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "myStruct",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "someField",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "someAddress",
+          "type": "address"
+        },
+        {
+          "internalType": "uint128",
+          "name": "someOtherField",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "oneMoreField",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x6080604052348015600f57600080fd5b5060c98061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c80638bc9fe6c14602d575b600080fd5b600054600154600254605b92916001600160a01b0316906001600160801b0380821691600160801b90041684565b604080519485526001600160a01b039390931660208501526001600160801b0391821684840152166060830152519081900360800190f3fea2646970667358221220603476b22a6a0aa3f7d031c500e54996f3c5ec80e1fd3ea26ccaefaffeb3b62a64736f6c63430008140033",
+    "sourceMap": "57:181:19:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c80638bc9fe6c14602d575b600080fd5b600054600154600254605b92916001600160a01b0316906001600160801b0380821691600160801b90041684565b604080519485526001600160a01b039390931660208501526001600160801b0391821684840152166060830152519081900360800190f3fea2646970667358221220603476b22a6a0aa3f7d031c500e54996f3c5ec80e1fd3ea26ccaefaffeb3b62a64736f6c63430008140033",
+    "sourceMap": "57:181:19:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;211:24;;;;;;;;;;-1:-1:-1;;;;;211:24:19;;-1:-1:-1;;;;;211:24:19;;;;-1:-1:-1;;;211:24:19;;;;;;;;;245:25:21;;;-1:-1:-1;;;;;306:32:21;;;;301:2;286:18;;279:60;-1:-1:-1;;;;;428:15:21;;;408:18;;;401:43;480:15;475:2;460:18;;453:43;211:24:19;;;;;232:3:21;211:24:19;;",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "myStruct()": "8bc9fe6c"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.20+commit.a1b79de6\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"myStruct\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"someField\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"someAddress\",\"type\":\"address\"},{\"internalType\":\"uint128\",\"name\":\"someOtherField\",\"type\":\"uint128\"},{\"internalType\":\"uint128\",\"name\":\"oneMoreField\",\"type\":\"uint128\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/StructDefiner.sol\":\"StructDefiner\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/StructDefiner.sol\":{\"keccak256\":\"0x796903fc0dc19df193892e6c5c36ac2b7d6fd9a18e8ed422f063ce18756231eb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f9435215344005095d6219368ba7d363c79290ff12fb04f751eb0356605cdd6c\",\"dweb:/ipfs/QmZ7pTeqTpdbtZTRSQg372WaThcfVqRAMSopydz4iJgcHN\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.20+commit.a1b79de6"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "myStruct",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "someField",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "someAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint128",
+              "name": "someOtherField",
+              "type": "uint128"
+            },
+            {
+              "internalType": "uint128",
+              "name": "oneMoreField",
+              "type": "uint128"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        ":ds-test/=lib/forge-std/lib/ds-test/src/",
+        ":forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/StructDefiner.sol": "StructDefiner"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/StructDefiner.sol": {
+        "keccak256": "0x796903fc0dc19df193892e6c5c36ac2b7d6fd9a18e8ed422f063ce18756231eb",
+        "urls": [
+          "bzz-raw://f9435215344005095d6219368ba7d363c79290ff12fb04f751eb0356605cdd6c",
+          "dweb:/ipfs/QmZ7pTeqTpdbtZTRSQg372WaThcfVqRAMSopydz4iJgcHN"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/StructDefiner.sol",
+    "id": 29509,
+    "exportedSymbols": {
+      "StructDefiner": [
+        29508
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:207:19",
+    "nodes": [
+      {
+        "id": 29495,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:19",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "0.8",
+          ".20"
+        ]
+      },
+      {
+        "id": 29508,
+        "nodeType": "ContractDefinition",
+        "src": "57:181:19",
+        "nodes": [
+          {
+            "id": 29504,
+            "nodeType": "StructDefinition",
+            "src": "84:123:19",
+            "nodes": [],
+            "canonicalName": "StructDefiner.MyStruct",
+            "members": [
+              {
+                "constant": false,
+                "id": 29497,
+                "mutability": "mutable",
+                "name": "someField",
+                "nameLocation": "114:9:19",
+                "nodeType": "VariableDeclaration",
+                "scope": 29504,
+                "src": "106:17:19",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 29496,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "106:7:19",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 29499,
+                "mutability": "mutable",
+                "name": "someAddress",
+                "nameLocation": "137:11:19",
+                "nodeType": "VariableDeclaration",
+                "scope": 29504,
+                "src": "129:19:19",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 29498,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "129:7:19",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 29501,
+                "mutability": "mutable",
+                "name": "someOtherField",
+                "nameLocation": "162:14:19",
+                "nodeType": "VariableDeclaration",
+                "scope": 29504,
+                "src": "154:22:19",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 29500,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "154:7:19",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 29503,
+                "mutability": "mutable",
+                "name": "oneMoreField",
+                "nameLocation": "190:12:19",
+                "nodeType": "VariableDeclaration",
+                "scope": 29504,
+                "src": "182:20:19",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint128",
+                  "typeString": "uint128"
+                },
+                "typeName": {
+                  "id": 29502,
+                  "name": "uint128",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "182:7:19",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "MyStruct",
+            "nameLocation": "91:8:19",
+            "scope": 29508,
+            "visibility": "public"
+          },
+          {
+            "id": 29507,
+            "nodeType": "VariableDeclaration",
+            "src": "211:24:19",
+            "nodes": [],
+            "constant": false,
+            "functionSelector": "8bc9fe6c",
+            "mutability": "mutable",
+            "name": "myStruct",
+            "nameLocation": "227:8:19",
+            "scope": 29508,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_MyStruct_$29504_storage",
+              "typeString": "struct StructDefiner.MyStruct"
+            },
+            "typeName": {
+              "id": 29506,
+              "nodeType": "UserDefinedTypeName",
+              "pathNode": {
+                "id": 29505,
+                "name": "MyStruct",
+                "nameLocations": [
+                  "211:8:19"
+                ],
+                "nodeType": "IdentifierPath",
+                "referencedDeclaration": 29504,
+                "src": "211:8:19"
+              },
+              "referencedDeclaration": 29504,
+              "src": "211:8:19",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_MyStruct_$29504_storage_ptr",
+                "typeString": "struct StructDefiner.MyStruct"
+              }
+            },
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "StructDefiner",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          29508
+        ],
+        "name": "StructDefiner",
+        "nameLocation": "66:13:19",
+        "scope": 29509,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 19
+}

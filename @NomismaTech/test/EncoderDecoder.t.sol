@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.20;
 
+import "forge-std/console.sol";
 import "forge-std/Test.sol";
 import "../src/Controller.sol";
 import "../src/Storage.sol";
@@ -29,8 +30,20 @@ contract ByteEncoderDecoder is Test {
         storageContract.push(structInstance);
     }
 
+    function testEncode() public {
+        bytes memory target = hex"000000000000000000000000000000000000000000000000000000000000000a0000000000000000000000007e5f4552091a69125d5dfcb7b8c2659029395bdf000000000000000000000000000000000000000000000000000000000000000b000000000000000000000000000000000000000000000000000000000000000c";
+        bytes memory encoded = storageContract.getEncodedStructByIndex(0);
+
+        assertEq0(encoded, target);
+    }
+
     function testDecode() public {
         StructDefiner.MyStruct memory decodedStruct = controller.decodeStructByIndex(0);
+
+        console.log(decodedStruct.someField);
+        console.log(decodedStruct.someAddress);
+        console.log(decodedStruct.someOtherField);
+        console.log(decodedStruct.oneMoreField);
 
         assertEq(decodedStruct.someField, structInstance.someField);
         assertEq(decodedStruct.someAddress, structInstance.someAddress);
@@ -38,12 +51,6 @@ contract ByteEncoderDecoder is Test {
         assertEq(decodedStruct.oneMoreField, structInstance.oneMoreField);
     }
 
-    function testEncode() public {
-        bytes memory target = hex"000000000000000000000000000000000000000000000000000000000000000a7e5f4552091a69125d5dfcb7b8c2659029395bdf0000000000000000000000000000000b0000000000000000000000000000000c";
-        bytes memory encoded = storageContract.getEncodedStructByIndex(0);
-
-        assertEq0(encoded, target);
-    }
 
     function testGetStorageLocation() public {
         bytes32 firstArrayPosition = hex"290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563";

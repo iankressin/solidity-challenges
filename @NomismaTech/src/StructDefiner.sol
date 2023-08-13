@@ -8,4 +8,6 @@ contract StructDefiner {
     uint128 someOtherField;
     uint128 oneMoreField;
   }
+
+  MyStruct public myStruct;
 }
