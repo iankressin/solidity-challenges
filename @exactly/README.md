@@ -6,7 +6,9 @@
 
 #### Summary
 
-ETHPool provides a service where people can deposit ETH and they will receive weekly rewards. Users must be able to take out their deposits along with their portion of rewards at any time. New rewards are deposited manually into the pool by the ETHPool team each week using a contract function.
+ETHPool provides a service where people can deposit ETH and they will receive weekly rewards.
+Users must be able to take out their deposits along with their portion of rewards at any time.
+New rewards are deposited manually into the pool by the ETHPool team each week using a contract function.
 
 #### Requirements
 
