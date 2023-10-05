@@ -40,11 +40,6 @@ contract ByteEncoderDecoder is Test {
     function testDecode() public {
         StructDefiner.MyStruct memory decodedStruct = controller.decodeStructByIndex(0);
 
-        console.log(decodedStruct.someField);
-        console.log(decodedStruct.someAddress);
-        console.log(decodedStruct.someOtherField);
-        console.log(decodedStruct.oneMoreField);
-
         assertEq(decodedStruct.someField, structInstance.someField);
         assertEq(decodedStruct.someAddress, structInstance.someAddress);
         assertEq(decodedStruct.someOtherField, structInstance.someOtherField);
