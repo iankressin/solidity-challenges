@@ -33,6 +33,7 @@ contract ETHPool is AccessControl {
     event RewardsDeposited(uint amount);
     event RewardsWithdrawn(uint amount);
 
+    error ETHTransferFail();
     error TooEarlyForRewards();
     error NotRewardDepositor();
     error AmountGreaterThanBalance();
@@ -83,7 +84,10 @@ contract ETHPool is AccessControl {
 
         userInfo[msg.sender].balance = balance - _amount;
 
-        payable(msg.sender).call{ value: _amount }("");
+        (bool success, ) = payable(msg.sender).call{ value: _amount }("");
+
+        if (!success)
+            revert ETHTransferFail();
 
         withdrawRewards();
     }
